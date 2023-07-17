@@ -7,7 +7,7 @@ import (
 )
 
 // LatestSchemaVersion manages the Schema version used in the latest goval-dictionary.
-const LatestSchemaVersion = 2
+const LatestSchemaVersion = 3
 
 // FetchMeta has DB information
 type FetchMeta struct {
