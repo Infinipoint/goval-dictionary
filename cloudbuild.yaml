@@ -1,0 +1,9 @@
+steps:
+  - name: 'gcr.io/cloud-builders/docker'
+    args: [ 'build', '-t', 'eu.gcr.io/infinipoint/vuls-goval-dictionary-fork:0.9.3', '.' ]
+images:
+  - 'eu.gcr.io/infinipoint/vuls-goval-dictionary-fork:0.9.3'
+timeout: 1200s
+options:
+  logging: GCS_ONLY
+  logStreamingOption: STREAM_ON
